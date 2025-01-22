@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Zoko HR CSS Project</title>
+  <style>
+    /* Fix for removing extra space on the right side */
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="relative">
+    <!-- Navbar -->
+    <div class="row w-full h-9 bg-slate-900 top-0 fixed right-0">
+      <ul class="mx-16 flex items-center h-full w-72 gap-4">
+        <li class="h-full w-full flex items-center">
+          <a
+            class="active flex justify-center items-center w-full h-full text-light bg-text-primary"
+            href="./index.html"
+          >
+            FOR JOB SEEKERS
+          </a>
+        </li>
+        <li class="h-full w-full flex items-center">
+          <a
+            class="text-primary hover:text-opacity-50 transition duration-300"
+            href="./employers.html"
+          >
+            FOR EMPLOYERS
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Slider -->
+    <div class="container h-screen">
+      <div class="swiper mySwiper relative">
+        <div class="navbar">
+          <div class="logo">
+            <h3 class="logo">ZOKO HR</h3>
+          </div>
+          <ul class="nav-menu">
+            <li class="dropdown">
+              <a href="#" class="dropbtn">FIND A JOB</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">WORKING WITH ZOKO HR</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">JOBS FOR REFUGEES</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">WHO WE ARE</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">CV MAKER</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Mobile Development</a></li>
+                <li><a href="#">SEO Services</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img src="./images/slide_1.jpg" class="slide-image" alt="Slide 1">
+            <div class="slide-content">
+              <h1 class="custom-heading">Find Your Dream Job</h1>
+              <p class="custom-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.
+              </p>
+              <button class="custom-button">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img src="./images/slide_2.jpg" class="slide-image" alt="Slide 2">
+            <div class="slide-content">
+              <h1 class="custom-heading">Grow Your Career</h1>
+              <p class="custom-paragraph">
+                Discover opportunities that match your skills and aspirations.
+              </p>
+              <button class="custom-button">
+                Explore Now
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img src="./images/slide_3.jpg" class="slide-image" alt="Slide 3">
+            <div class="slide-content">
+              <h1 class="custom-heading">Connect With Employers</h1>
+              <p class="custom-paragraph">
+                Build meaningful relationships with top companies in your industry.
+              </p>
+              <button class="custom-button">
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation and Pagination -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+        <!-- Autoplay Progress -->
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="search-job">
+      <h2 class="h-font heading">Find a Job</h2>
+      <p class="paragraph">We have 100,000+ jobs across the globe. Whether you're looking for a remote job or a job near you, Adecco is here to help you find the job that is right for you.</p>
+
+      <div class="search-container">
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search job title, skill or company" class="search-input">
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search job category" class="search-input">
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search city" class="search-input">
+        </div>
+
+        <div>
+          <button class="search-btn">Find Job</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="resorces">
+      <h2 class="h-font heading">Resources</h2>
+      <p class="paragraph">Here is our collection of the most relevant workplace and employer insights. Learn more about our staffing solutions and the best recruitment practices.</p>
+
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img src="./images/blog-1.png" alt="Blog 1" class="blog-image">
+          <h3 class="h-font blog-heading">How to Write a Resume</h3>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.</p>
+          <button class="blog-btn">Read More</button>
+        </div>
+        <div class="blog-card">
+          <img src="./images/blog-2.jfif" alt="Blog 2" class="blog-image">
+          <h3 class="h-font blog-heading">How to Write a Cover Letter</h3>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.</p>
+          <button class="blog-btn">Read More</button>
+        </div>
+        <div class="blog-card">
+          <img src="./images/blog-3.jpg" alt="Blog 3" class="blog-image">
+          <h3 class="h-font blog-heading">How to Prepare for an Interview</h3>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.</p>
+          <button class="blog-btn">Read More</button>
+        </div>
+        <button class="view-more-btn">VIEW MORE</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-cards">
+        <div class="footer-card">
+          <h3 class="h-font footer-heading">OUR SOLUTIONS</h3>
+          <p class="footer-paragraph">Learn more about our market-leading solutions that can help your business thrive.</p>
+          <button class="footer-btn">OUR SOLUTIONS</button>
+        </div>
+        <div class="footer-card">
+          <h3 class="h-font footer-heading">OUR SOLUTIONS</h3>
+          <p class="footer-paragraph">Learn more about our market-leading solutions that can help your business thrive.</p>
+          <button class="footer-btn">OUR SOLUTIONS</button>
+        </div>
+        <div class="footer-card">
+          <h3 class="h-font footer-heading">OUR SOLUTIONS</h3>
+          <p class="footer-paragraph">Learn more about our market-leading solutions that can help your business thrive.</p>
+          <button class="footer-btn">OUR SOLUTIONS</button>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <div class="footer-contact-card">
+          <h3 class="h-font footer-logo">ZOKO HR</h3>
+        </div>
+        <div class="footer-contact-card">
+          <h3 class="h-font footer-heading" style="text-align: start;">SOLUTIONS</h3>
+          <ul class="footer-list">
+            <li>PARMANENT PLACEMENT</li>
+            <li>TEMPORARY STAFFING</li>
+            <li>OUTSOURCING</li>
+            <li>TRAINING</li>
+            <li>Diversity & Inclusion</li>
+          </ul>
+        </div>
+        <div class="footer-contact-card">
+          <h3 class="h-font footer-heading" style="text-align: start;">JOB SEEKERS</h3>
+          <ul class="footer-list">
+            <li>FIND A JOB</li>
+            <li>WORKING WITH ZOKO HR</li>
+            <li>OUTSOURCING</li>
+            <li>JOB SEEKER FAQS</li>
+          </ul>
+        </div>
+        <div class="footer-contact-card">
+          <h3 class="h-font footer-heading" style="text-align: start;">FOR EMPLOYERS</h3>
+          <ul class="footer-list">
+            <li>ZOKO HR ADVANTAGE</li>
+            <li>HOW WE WORK</li>
+            <li>INDUSTRIES</li>
+            <li>RECRUITMENT & HR SOLUTIONS</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-card">
+          <h3 class="h-font footer-heading" style="text-align: start;">ZOKO HR</h3>
+          <ul class="footer-list">
+            <li>FIND A JOB</li>
+            <li>WHO WE ARE</li>
+            <li>RESOURCES</li>
+            <li>CAREER @ZOKO HR</li>
+            <li>EMPOYERS FAQS</li>
+            <li>INVESTORS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
