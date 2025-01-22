@@ -7,6 +7,7 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Zoko HR CSS Project</title>
   <style>
     /* Fix for removing extra space on the right side */
@@ -135,11 +136,11 @@
   </header>
 
   <main>
-    <div class="search-job">
+    <div class="search-job" data-aos="zoom-out">
       <h2 class="h-font heading">Find a Job</h2>
       <p class="paragraph">We have 100,000+ jobs across the globe. Whether you're looking for a remote job or a job near you, Adecco is here to help you find the job that is right for you.</p>
 
-      <div class="search-container">
+      <div class="search-container" data-aos="slide-right">
         <div class="search-box">
           <i class='bx bx-search'></i>
           <input type="text" placeholder="Search job title, skill or company" class="search-input">
@@ -159,11 +160,11 @@
       </div>
     </div>
 
-    <div class="resorces">
+    <div class="resorces" data-aos="fade-up">
       <h2 class="h-font heading">Resources</h2>
       <p class="paragraph">Here is our collection of the most relevant workplace and employer insights. Learn more about our staffing solutions and the best recruitment practices.</p>
 
-      <div class="blog-cards">
+      <div data-aos="fade-right" class="blog-cards">
         <div class="blog-card">
           <img src="./images/blog-1.png" alt="Blog 1" class="blog-image">
           <h3 class="h-font blog-heading">How to Write a Resume</h3>
@@ -256,5 +257,29 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./scripts/script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, 
+      startEvent: 'DOMContentLoaded', 
+      initClassName: 'aos-init', 
+      animatedClassName: 'aos-animate', 
+      useClassNames: false, 
+      disableMutationObserver: false, 
+      debounceDelay: 50, 
+      throttleDelay: 99, 
+  
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120,              // Trigger offset (in px)
+      delay: 100,               // Delay before animation starts (in ms)
+      duration: 1200,           // Animation duration (slower, in ms)
+      easing: 'ease-in-out',    // Smoother animation easing
+      once: false,              // Whether animation happens only once
+      mirror: false,            // Disable animations on scrolling back
+      anchorPlacement: 'top-bottom', // Trigger position relative to viewport
+    });
+  </script>
 </body>
 </html>

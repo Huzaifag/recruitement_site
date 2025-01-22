@@ -7,6 +7,7 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Zoko HR CSS Project</title>
   <style>
     /* Fix for removing extra space on the right side */
@@ -157,8 +158,8 @@
   </header>
 
   <main>
-    <div class="resorces">
-      <div class="blog-cards">
+    <div class="resorces" data-aos="fade-up">
+      <div  data-aos="fade-right" class="blog-cards">
         <div class="resource-card">
           <h2 class="h-font num-heading">25,000</h2>
           <h3 class="h-font blog-heading">Employees</h3>
@@ -180,8 +181,8 @@
       
     </div>
 
-    <div class="experience">
-      <div class="content-section">
+    <div data-aos="fade-up" class="experience">
+      <div class="content-section" data-aos="slide-right">
         <h2 class="h-font heading">Experience the Zoko Hr difference</h2>
         <p class="experience-para">With an extensive global network, we offer tailored workforce and recruitment solutions to both employers and job seekers, providing access to the best opportunities available in the market. With Zoko Hr, you can be sure of a reliable, efficient, and professional service that will help you find the right candidates when you need them.</p>
         <p class="experience-para">No matter where you are, we are here to help you grow. </p>
@@ -191,11 +192,11 @@
       </div>
     </div>
 
-    <div class="resorces">
+    <div class="resorces" data-aos="fade-down-right">
       <h2 class="h-font heading">Recruitment Solutions</h2>
       <p class="recruitment-para">Unlock your business potential with our dedicated recruitment solutions. Learn more about our full catalog of offerings for organizations of any size across any industry.</p>
 
-      <div class="blog-cards">
+      <div class="blog-cards" data-aos="slide-right">
         <div class="rec-card">
           <img src="./images/rec-1.svg" alt="Blog 1" class="rec-image">
           <h3 class="h-font blog-heading">Flexible Placement</h3>
@@ -217,7 +218,7 @@
       </div>
     </div>
 
-    <div class="experience">
+    <div data-aos="fade-in" class="experience">
       <div class="content-section">
         <h2 class="h-font heading">Ready to experience the Adecco difference?</h2>
         <p class="experience-para">We are here to help you build the best possible recruitment programs on budget and on time.</p>
@@ -230,11 +231,11 @@
       </div>
     </div>
 
-    <div class="industries">
+    <div class="industries" data-aos="fade-down-left">
       <h2 class="h-font heading">Our Industries</h2>
       <p class="recruitment-para">We help you unlock your business potential across any industry. Zoko Hr specializes in identifying and placing top-tier talent, seamlessly spanning diverse sectors to meet your staffing needs.</p>
 
-      <div class="blog-cards">
+      <div class="blog-cards" data-aos="slide-up">
         <div class="industries-card">
           <img src="./images/industry-1.webp" alt="Blog 1" class="industries-image">
           <h3 class="h-font blog-heading">Automotive, Aeronautics & Mobility</h3>
@@ -262,9 +263,9 @@
       </div>
     </div>
 
-    <div class="testimonials">
+    <div class="testimonials" data-aos="fade-up-right">
       <h2 class="h-font heading">What our clients say</h2>
-      <div class="blog-cards">
+      <div class="blog-cards" data-aos="fade-down-left">
         <div class="qoute-card">
           <h3 class="h-font qoute-heading"><i class='bx bxs-quote-right'></i></h3>
           <p class="paragraph">It's straightforward, and Adecco simplifies the process. Efficient, thorough, and responsive service throughout.</p>
@@ -283,11 +284,11 @@
       </div>
     </div>
 
-    <div class="resorces">
+    <div class="resorces" data-aos="fade-down-left">
       <h2 class="h-font heading">Resources</h2>
       <p class="recruitment-para">Here is our collection of the most relevant workplace and employer insights. Learn more about our staffing solutions and the best recruitment practices.</p>
 
-      <div class="blog-cards">
+      <div class="blog-cards" data-aos="slide-right">
         <div class="blog-card">
           <img src="./images/blog-1.png" alt="Blog 1" class="blog-image">
           <h3 class="h-font blog-heading">How to Write a Resume</h3>
@@ -380,5 +381,28 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./scripts/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, 
+      startEvent: 'DOMContentLoaded', 
+      initClassName: 'aos-init', 
+      animatedClassName: 'aos-animate', 
+      useClassNames: false, 
+      disableMutationObserver: false, 
+      debounceDelay: 50, 
+      throttleDelay: 99, 
+  
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120,              // Trigger offset (in px)
+      delay: 100,               // Delay before animation starts (in ms)
+      duration: 1200,           // Animation duration (slower, in ms)
+      easing: 'ease-in-out',    // Smoother animation easing
+      once: false,              // Whether animation happens only once
+      mirror: false,            // Disable animations on scrolling back
+      anchorPlacement: 'top-bottom', // Trigger position relative to viewport
+    });
+  </script>
 </body>
 </html>
